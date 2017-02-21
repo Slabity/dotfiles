@@ -13,6 +13,9 @@ plugins=(common-aliases compleat git git-extras sudo systemd tmux vi-mode wd)
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=false
 
+# Export local path
+export PATH="$HOME/.local/bin:$PATH:/sbin"
+
 # Finally, source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
