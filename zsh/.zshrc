@@ -14,7 +14,8 @@ ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=false
 
 # Export local path
-export PATH="$HOME/.local/bin:$PATH:/sbin"
+export PATH="$HOME/.local/bin:$PATH:/sbin:/usr/sbin"
+source $HOME/.local/share/scripts/utils.sh
 
 # Finally, source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
