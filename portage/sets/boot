@@ -1,0 +1,5 @@
+sys-boot/plymouth
+sys-boot/refind
+sys-kernel/dracut
+sys-kernel/gentoo-sources
+sys-kernel/linux-firmware

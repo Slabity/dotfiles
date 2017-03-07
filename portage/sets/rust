@@ -1,0 +1,3 @@
+dev-lang/rust:nightly::rust
+dev-lang/rust:stable::rust
+dev-util/cargo::rust

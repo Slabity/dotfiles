@@ -1,0 +1,10 @@
+sys-devel/gdb
+dev-util/valgrind
+dev-vcs/git
+dev-vcs/subversion
+dev-lang/ghc
+dev-lang/go
+dev-lang/python
+@python
+@java
+@rust

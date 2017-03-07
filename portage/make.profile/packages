@@ -1,0 +1,78 @@
+# System packages. Commented out packages are available in parent profiles
+
+# sys-apps/baselayout
+
+# Compression utilities
+# app-arch/xz-utils
+# app-arch/bzip2
+# app-arch/gzip
+# app-arch/tar
+*app-arch/lz4
+*app-arch/zip
+*app-arch/unzip
+
+# System utilities
+# sys-apps/util-linux
+# sys-devel/binutils
+# sys-apps/coreutils
+# sys-apps/findutils
+# sys-apps/diffutils
+# net-misc/iputils
+# sys-apps/iproute2
+# sys-apps/file
+# sys-apps/busybox
+# sys-apps/which
+# sys-apps/gawk
+# sys-apps/grep
+# sys-apps/sed
+# sys-process/procps
+# sys-process/psmisc
+# net-misc/wget
+# net-misc/rsync
+# app-shells/bash
+# sys-fs/e2fsprogs
+# sys-apps/kbd
+*app-shells/zsh
+*app-admin/sudo
+-*sys-apps/net-tools
+*net-misc/networkmanager
+
+# Virtuals and their dependencies
+# virtual/editor
+    *app-editors/emacs
+# virtual/os-headers
+#   sys-kernel/linux-headers
+# virtual/man
+#   sys-apps/man-pages
+# virtual/modutils
+    *sys-apps/kmod[tools]
+# virtual/libc
+#   Fullfulled by elibc_glibc
+# virtual/ssh
+#   Fulfilled by !minimal net-misc/openssh
+# virtual/shadow
+#   sys-apps/shadow
+# virtual/pager
+#   sys-apps/less
+# virtual/package-manager
+    *sys-apps/portage
+    *app-portage/gentoolkit
+    *app-portage/repoman
+# virtual/dev-manager
+    # virtual/udev
+# virtual/service-manager
+    -*sys-apps/openrc
+    *sys-apps/systemd
+    *sys-apps/systemd-sysv-utils
+
+# Development packages
+*virtual/yacc
+    *sys-devel/bison
+# sys-devel/gnuconfig
+# sys-devel/patch
+# sys-devel/make
+# sys-devel/gcc
+*dev-util/ccache
+*sys-devel/llvm
+*sys-devel/clang
+

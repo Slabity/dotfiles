@@ -1,0 +1,15 @@
+diff --git a/src/mesa/swrast/swrast.h b/src/mesa/swrast/swrast.h
+index a89dc6c..a70ccf1 100644
+--- a/src/mesa/swrast/swrast.h
++++ b/src/mesa/swrast/swrast.h
+@@ -32,6 +32,10 @@
+ #ifndef SWRAST_H
+ #define SWRAST_H
+ 
++#ifdef _OPENMP
++#include <omp.h>
++#endif
++
+ #include "main/mtypes.h"
+ #include "swrast/s_chan.h"
+ 

@@ -1,0 +1,14 @@
+media-sound/alsa-utils
+net-firewall/iptables
+net-dns/bind-tools
+net-misc/openssh
+sys-apps/dmidecode
+sys-apps/gptfdisk
+sys-apps/pciutils
+sys-apps/usbutils
+sys-fs/btrfs-progs
+sys-apps/dstat
+sys-process/htop
+sys-process/atop
+sys-process/glances
+dev-util/strace

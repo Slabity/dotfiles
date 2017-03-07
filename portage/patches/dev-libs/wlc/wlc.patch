@@ -1,0 +1,22 @@
+diff --git a/src/session/tty.c b/src/session/tty.c
+index 195439a..154859b 100644
+--- a/src/session/tty.c
++++ b/src/session/tty.c
+@@ -131,11 +131,12 @@ setup_tty(int fd, bool replace_vt)
+ 
+    wlc.old_state.vt = state.v_active;
+ 
+-   if (ioctl(fd, VT_ACTIVATE, wlc.vt) == -1)
+-      die("Could not activate vt%d", wlc.vt);
+-
+-   if (ioctl(fd, VT_WAITACTIVE, wlc.vt) == -1)
+-      die("Could not wait for vt%d to become active", wlc.vt);
++   if (ioctl(fd, VT_ACTIVATE, wlc.vt) == -1) {
++      wlc_log(WLC_LOG_INFO, "Could not activate vt%d", wlc.vt);
++      return true;
++   } else
++      if (ioctl(fd, VT_WAITACTIVE, wlc.vt) == -1)
++         wlc_log(WLC_LOG_INFO, "Could not wait for vt%d to become active", wlc.vt);
+ #endif
+ 
+    if (ioctl(fd, KDGKBMODE, &wlc.old_state.kb_mode) == -1)

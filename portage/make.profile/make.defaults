@@ -1,0 +1,12 @@
+# Get rid of targets we don't want
+PYTHON_SINGLE_TARGET="-* python3_5"
+PYTHON_TARGETS="-* python3_5"
+RUBY_TARGETS="-* ruby24"
+LLVM_TARGETS="*"
+PHP_TARGETS="-*"
+APACHE2_MODULES="-*"
+CALLIGRA_FEATURES="-*"
+GPSD_PROTOCOLS="-*"
+LIBREOFFICE_EXTENSIONS="-*"
+QEMU_USER_TARGETS="-*"
+CURL_SSL="-* libressl"

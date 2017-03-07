@@ -1,0 +1,25 @@
+sys-boot/refind -custom-cflags
+dev-lang/rust clang libcxx source
+app-text/asciidoc python_single_target_python2_7
+
+app-text/texlive cjk extra graphics png publishers science xetex
+app-text/texlive-core xetex
+
+x11-drivers/xf86-video-intel dri3 sna xvmc
+x11-base/xorg-server xvfb
+media-libs/mesa d3d9 dri3 gallium gbm vulkan xa xvmc
+media-video/mpv gbm
+media-libs/gst-plugins-bad -opengl
+app-emulation/wine d3d9 dos mono run-exes themes staging
+
+x11-terms/rxvt-unicode 256-color blink font-styles mousewheel startup-notification unicode3 vanilla
+x11-misc/rofi i3 windowmode
+dev-libs/sway -swaybar swaybg swaymsg systemd swaygrab swaylock zsh-completion
+www-client/firefox custom-optimization hwaccel jemalloc3 pgo system-cairo system-harfbuzz system-icu system-jpeg system-libvpx system-sqlite
+dev-db/sqlite secure-delete
+
+sys-devel/llvm clang
+
+dev-python/ipython matplotlib
+
+app-editors/emacs -X

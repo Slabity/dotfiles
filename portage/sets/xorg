@@ -1,0 +1,10 @@
+media-libs/mesa
+x11-apps/xbacklight
+x11-apps/xclipboard
+x11-apps/xrandr
+x11-base/xorg-drivers
+x11-base/xorg-server
+x11-misc/lightdm
+x11-misc/xclip
+x11-misc/xdg-user-dirs
+x11-misc/xdg-utils
