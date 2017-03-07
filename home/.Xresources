@@ -1,0 +1,54 @@
+*saveLines: 8192
+*font: xft:Terminus:size=8,xft:Powerline:size=8
+
+! special
+*.foreground:   #e0bfbf
+*.background:   #0f0808
+*.cursorColor:  #e0bfbf
+
+! black
+*.color0:       #000000
+*.color8:       #4d0606
+
+! red
+! Dark Red
+*.color1:       #910000
+*.color9:       #D41C1C
+
+! green
+! Light Red
+*.color2:       #AF0B0B
+*.color10:      #E34848
+
+! yellow
+! Light Magenta
+*.color3:       #8E0951
+*.color11:      #B73A7F
+
+! blue
+! Dark Purple
+*.color4:       #910000
+*.color12:      #D41C1C
+
+! magenta
+! Light red
+*.color5:       #801515
+*.color13:      #D46A6A
+
+! cyan
+! Light Purple
+*.color6:       #530D75
+*.color14:      #783597
+
+! white
+*.color7:       #b3b3b3
+*.color15:      #ffffff
+
+! urxvt config
+URxvt*scrollBar: false
+URxvt.perl-ext-common: clipboard
+URxvt*termName: rxvt-unicode-256color
+
+! rofi config
+rofi.color-normal:  #0F0808,#E0BFBF,#730015,#CF3030,#E0BFBF
+rofi.color-window:  #0F0808,#FF1D04

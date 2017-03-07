@@ -1,0 +1,890 @@
+: 1488580278:0;ls -la
+: 1488580284:0;cat .gitignore
+: 1488580338:0;nvim .gitignore
+: 1488580369:0;nvim .git
+: 1488580373:0;nvim .gitignore
+: 1488580387:0;exit
+: 1488580390:0;cd .dotfiles
+: 1488580391:0;ls
+: 1488580403:0;nvim .gitignore
+: 1488580412:0;git add zsh/oh-my-zsh
+: 1488580414:0;git commit
+: 1488580452:0;cd .dotfiles
+: 1488580452:0;ls
+: 1488580469:0;nvim zsh/.zshrc
+: 1488580543:0;exit
+: 1488580548:0;u_error test
+: 1488580700:0;env | grep ZSH
+: 1488580963:0;nvim zsh/.zshrc
+: 1488580971:0;cd .dotfiles/zsh
+: 1488580974:0;nvim .zshrc
+: 1488583650:0;install
+: 1488583762:0;ls
+: 1488583764:0;cd ..
+: 1488583768:0;git add zsh/.zshrc
+: 1488583770:0;git commit
+: 1488583781:0;git push origin master
+: 1488583793:0;git push github master
+: 1488584379:0;exit
+: 1488584919:0;alsamixer
+: 1488587184:0;mesg
+: 1488587188:0;mesg this
+: 1488587192:0;exit
+: 1488587605:0;ls
+: 1488589681:0;ls -la
+: 1488589688:0;rm -rf wpscan
+: 1488589690:0;ls -la
+: 1488608295:0;exit
+: 1488612806:0;create_script.sh install_pkg.sh
+: 1488612811:0;exit
+: 1488612882:0;nvim .local/share/scripts/utils.sh
+: 1488613612:0;equery test
+: 1488613667:0;equery l neovim
+: 1488613883:0;equery lm neovim
+: 1488613890:0;equery l neovim
+: 1488613895:0;equery m neovim
+: 1488613922:0;equery u neovim
+: 1488613936:0;equery l neovim
+: 1488613939:0;equery l neovi
+: 1488613973:0;exit
+: 1488613977:0;install_pkg.sh
+: 1488614001:0;install_pkg.sh neovim
+: 1488614012:0;nvim .local/bin/install_pkg.sh
+: 1488614023:0;install_pkg.sh neovim
+: 1488614189:0;install_pkg.sh
+: 1488614320:0;install_pkg.sh neovim
+: 1488614644:0;install_pkg.sh neovim test
+: 1488614674:0;equery l neovim
+: 1488614677:0;man equery
+: 1488614693:0;equery -N l neovim
+: 1488614704:0;install_pkg.sh neovim test
+: 1488614711:0;equery -Nq l neovim
+: 1488614719:0;man equery
+: 1488614812:0;equery l neovim
+: 1488614816:0;equery -q l neovim
+: 1488614828:0;equery -q l neovim -F $slot
+: 1488614840:0;equery -q l neovim -F "$slot"
+: 1488614844:0;equery -q l neovim -F "\$slot"
+: 1488614881:0;equery -q l neovim -F "\$cpv \$slot"
+: 1488614908:0;equery -q l neovim -F "\$cpv:\$repo \$slot"
+: 1488614914:0;equery -q l neovim -F "\$cpv:\$repo\t\$slot"
+: 1488614935:0;equery -q l neovim -F "\$mask \$cpv:\$repo \$slot"
+: 1488614954:0;equery -q l neovim -F "\$location \$mask \$cpv:\$repo \$slot"
+: 1488614966:0;equery -q l neovim -F "[\$location] \$cpv:\$repo \$slot"
+: 1488614990:0;equery -q l neovim -F "[\$location][\$mask]\$cpv:\$repo \$slot"
+: 1488615000:0;equery -q l neovim -F "[\$location] [\$mask] \$cpv::\$repo \$slot"
+: 1488615014:0;sudo nvim /etc/portage/package.accept_keywords
+: 1488615024:0;equery -q l neovim -F "[\$location] [\$mask] \$cpv::\$repo \$slot"
+: 1488615040:0;equery -q l neovim -F "[\$location] [\$mask] \$cpv::\$repo:\$slot"
+: 1488615143:0;exit
+: 1488615150:0;install_pkg.sh test
+: 1488615295:0;install_pkg.sh neovim firefox
+: 1488617572:0;ipython
+: 1488618157:0;ls
+: 1488618160:0;exit
+: 1488618252:0;git clone https://github.com/TyanNN/portage-tui.git
+: 1488618258:0;cd portage-tui
+: 1488618259:0;ls
+: 1488618263:0;sudo ./portage-tui
+: 1488618321:0;ls
+: 1488618322:0;cd ..
+: 1488618325:0;rm -rf portage-tui
+: 1488618331:0;cd portage-tui
+: 1488618332:0;ls
+: 1488618336:0;sudo rm -rf __pycache__
+: 1488618337:0;cd ..
+: 1488618339:0;rm -rf portage-tui
+: 1488618341:0;ls -la
+: 1488619962:0;exit
+: 1488622859:0;htop
+: 1488623206:0;sudo nvim /etc/portage/sets/utils
+: 1488623246:0;sudo emerge -a glances
+: 1488623364:0;cd .config/nvim
+: 1488623365:0;ls
+: 1488623372:0;cp init.vim init.vim.bak
+: 1488623379:0;ls
+: 1488623383:0;mv bundle bundle.bak
+: 1488623384:0;ls
+: 1488623386:0;rm init.vim
+: 1488623395:0;curl -sSfL https://raw.githubusercontent.com/tehnix/spaceneovim/master/vimrc.sample -o ~/.config/nvim/init.vim | nvim
+: 1488623400:0;ls
+: 1488623404:0;nvim init.vim
+: 1488623428:0;ls
+: 1488623430:0;nvim init.vim
+: 1488623771:0;sudo emerge -a emacs
+: 1488623801:0;sudo su
+: 1488624120:0;cd
+: 1488624127:0;exit
+: 1488624129:0;emacs
+: 1488624169:0;killall emacs
+: 1488624213:0;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d/
+: 1488624221:0;rm -rf .emacs.d
+: 1488624222:0;git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d/
+: 1488624246:0;emacs
+: 1488624673:0;edit
+: 1488624688:0;exit
+: 1488624692:0;cd /etc/portage
+: 1488624693:0;ls
+: 1488624695:0;cd make.profile
+: 1488624695:0;ls
+: 1488624698:0;cd ..
+: 1488624704:0;cp -r make.profile make.profile.bak
+: 1488624707:0;sudo cp -r make.profile make.profile.bak
+: 1488624712:0;ls
+: 1488624714:0;cd make.profile
+: 1488624714:0;ls
+: 1488624718:0;nvim eapi
+: 1488624728:0;sudo nvim eapi
+: 1488624734:0;ls -la
+: 1488624737:0;nvim make.defaults
+: 1488624775:0;sudo nvim make.defaults
+: 1488624789:0;nvim parent
+: 1488624804:0;ls
+: 1488624806:0;nvim package.use
+: 1488624842:0;sudo nvim package.use
+: 1488624846:0;ls
+: 1488624848:0;rm package.use
+: 1488624860:0;sudo rm package.use
+: 1488624867:0;sudo emacs packages
+: 1488624985:0;sudo emerge --update --deep --newuse -a @world
+: 1488625003:0;ls
+: 1488625007:0;cat package.accept_keywords
+: 1488625013:0;sudo rm package.accept_keywords
+: 1488625015:0;ls
+: 1488625017:0;cat parent
+: 1488625022:0;nvim eapi
+: 1488625028:0;cd ..
+: 1488625035:0;sudo emacs make.conf
+: 1488626092:0;sudo euse -a rust
+: 1488626101:0;sudo emacs make.conf
+: 1488626116:0;sudo euse -a jack
+: 1488626125:0;sudo euse -D pulseaudio
+: 1488626135:0;euse -a
+: 1488626138:0;euse
+: 1488626144:0;euse -E jack
+: 1488626148:0;sudo euse -E jack
+: 1488626154:0;sudo emacs make.conf
+: 1488626245:0;ls
+: 1488626253:0;sudo rm make.conf.euse_backup
+: 1488626254:0;ls -la
+: 1488626289:0;nvim make.conf make.profile/make.defaults -O
+: 1488626323:0;sudo emacs make.conf make.profile.bak/{make.defaults,package.use} -O
+: 1488626335:0;sudo emacs make.conf make.profile.bak/{make.defaults,package.use}
+: 1488626373:0;sudo euse -E cryptsetup
+: 1488626398:0;sudo emerge -a portage
+: 1488626420:0;sudo emerge --sync
+: 1488626478:0;sudo emacs make.profile.bak/make.defaults
+: 1488626511:0;sudo euse -D bindist
+: 1488626610:0;sudo emerge -a @world
+: 1488626700:0;sudo euse -E libressl
+: 1488626711:0;sudo emerge -a @world
+: 1488626834:0;sudo emerge --unmerge cargo-bin
+: 1488626844:0;sudo emerge -a @world
+: 1488626965:0;sudo emerge -a --emptytree @world
+: 1488627147:0;sudo emacs /etc/portage/package.use/* -O
+: 1488627155:0;sudo emacs /etc/portage/package.use/*
+: 1488627158:0;exit
+: 1488627223:0;sudo emerge -a --emptytree @world
+: 1488627242:0;sudo nvim /etc/portage/package.use/* -O
+: 1488627281:0;cd /etc/portage/package.use
+: 1488627282:0;ls
+: 1488627283:0;cat rust
+: 1488627288:0;sudo mv rust ..
+: 1488627291:0;sudo rm *
+: 1488627292:0;cd ..
+: 1488627297:0;sudo rm -r package.use
+: 1488627298:0;ls -la
+: 1488627303:0;sudo mv rust package.use
+: 1488627308:0;ls -la
+: 1488627315:0;sudo nvim package.use
+: 1488627404:0;sudo emerge -a --emptytree @world
+: 1488627463:0;sudo emerge --newuse --update -a @world
+: 1488627541:0;sudo nvim package.use
+: 1488627559:0;sudo emerge --newuse --update -a @world
+: 1488628141:0;sudo emacs /etc/portage/package.accept_keywords
+: 1488628156:0;sudo rm /etc/portage/package.accept_keywords
+: 1488628176:0;sudo emerge --newuse --update -a @world
+: 1488628239:0;sudo emacs /var/lib/portage/world*
+: 1488628288:0;sudo emerge --newuse --update -a @world
+: 1488628390:0;sudo emerge --unmerge cargo
+: 1488628407:0;sudo emerge --unmerge rust
+: 1488628439:0;sudo emerge --newuse --update -a @world
+: 1488628572:0;sudo emacs /var/lib/portage/world*
+: 1488628598:0;sudo emerge --newuse --update -a @world
+: 1488628904:0;cd /etc/portage
+: 1488628905:0;ls
+: 1488628912:0;cat package.license
+: 1488628917:0;sudo rm package.license
+: 1488628926:0;ls -la
+: 1488634679:0;sudo nvim /var/tmp/portage/sys-apps/kmscon-8/temp/build.log
+: 1488634696:0;sudo emacs /var/tmp/portage/sys-apps/kmscon-8/temp/build.log
+: 1488634713:0;sudo nvim /var/tmp/portage/sys-apps/kmscon-8/temp/build.log
+: 1488634732:0;sudo emerge --resume -a
+: 1488634963:0;sudo emerge --resume -a --skip-first
+: 1488635393:0;sudo emacs
+: 1488635399:0;emacs
+: 1488635408:0;emacs-25
+: 1488635415:0;emacsclient
+: 1488635417:0;emacsclient test
+: 1488635419:0;ls
+: 1488635421:0;cd
+: 1488635422:0;ls
+: 1488635423:0;emacs
+: 1488635426:0;nvim .Xresources
+: 1488635441:0;sudo emerge --info emacs
+: 1488635465:0;sudo euse -E xft
+: 1488635481:0;sudo emerge -a rxvt-unicode
+: 1488635546:0;sudo nvim /var/lib/portage/world
+: 1488635556:0;sudo nvim /var/lib/portage/world_sets
+: 1488635566:0;sudo nvim /etc/portage/sets/* -O
+: 1488635585:0;exit
+: 1488635596:0;sudo emerge -a emacs
+: 1488635642:0;sudo emerge --unmerge google-talkplugin
+: 1488635656:0;sudo emerge -a emacs
+: 1488635659:0;macs
+: 1488635661:0;emacs
+: 1488635663:0;exit
+: 1488635967:0;emacs
+: 1488635970:0;exit
+: 1488635972:0;macs
+: 1488635973:0;emacs
+: 1488635987:0;sudo emerge --info emacs
+: 1488636037:0;emacs
+: 1488636060:0;nvim .Xresources
+: 1488636112:0;ls
+: 1488636114:0;cat ideas
+: 1488636159:0;emacs
+: 1488636172:0;mv .emacs.d .emacs.d.bak
+: 1488636174:0;emacs
+: 1488636183:0;mv .emacs.d.bak .emacs.d
+: 1488636242:0;xrdb .Xresources
+: 1488636244:0;emacs
+: 1488636413:0;sudo emerge --newuse --deep @world
+: 1488636467:0;emacs
+: 1488636539:0;sudo su
+: 1488636757:0;fc-list
+: 1488636817:0;exit
+: 1488636884:0;emacs
+: 1488636943:0;sudo emerge -a emacs
+: 1488637113:0;emacs
+: 1488637367:0;cat .emulator_console_auth_token
+: 1488637371:0;rm .emulator_console_auth_token
+: 1488637658:0;nvim .spacemacs
+: 1488637665:0;emacs .spacemacs
+: 1488637759:0;emacs
+: 1488637792:0;emacs .spacemacs
+: 1488637984:0;emacs --debug-init --timed-requires --profile
+: 1488638137:0;mkdir .config/systemd/user -p
+: 1488638147:0;emacs .config/systemd/user/emacs.service
+: 1488638234:0;echo $SSH_AUTH_SOCK
+: 1488638240:0;env | grep SOCK
+: 1488638247:0;exit
+: 1488638283:0;systemctl start --user emacs
+: 1488638381:0;nvim .config/systemd/user/emacs.service
+: 1488638403:0;systemctl --user enable emacs
+: 1488638408:0;systemctl --user start emacs
+: 1488638415:0;emacsclient
+: 1488638420:0;emacs
+: 1488638459:0;emacs .config/zsh/.zshrc
+: 1488638471:0;emacsclient .config/zsh/.zshrc
+: 1488640262:0;systemctl --user status emacs
+: 1488640293:0;man emacsclient
+: 1488640333:0;sudo emacsclient /etc/profile.d/50-dotfiles.sh
+: 1488640354:0;sudo emacs /etc/profile.d/50-dotfiles.sh
+: 1488640372:0;exit
+: 1488640376:0;$EDITOR
+: 1488640390:0;man emacs
+: 1488640412:0;emacs --no-splash
+: 1488640491:0;systemctl disable emacs
+: 1488640497:0;systemctl --user disable emacs
+: 1488640502:0;systemctl --user stop emacs
+: 1488640504:0;exit
+: 1488640509:0;man emacs
+: 1488640593:0;vim
+: 1488640600:0;which vim
+: 1488640604:0;ls -la /usr/bin/vim
+: 1488640612:0;sudo rm /usr/bin/vim
+: 1488640626:0;sudo ln -s /usr/bin/vim test
+: 1488640626:0;ls
+: 1488640629:0;ls -la
+: 1488640638:0;sudo rm test .subversion -rf
+: 1488640639:0;ls
+: 1488640654:0;sudo ln -s /usr/bin/emacs /usr/bin/vim
+: 1488640655:0;vim
+: 1488640679:0;emacs .spacemacs
+: 1488646941:0;exit
+: 1488647095:0;sudo emerge -a emacs
+: 1488647183:0;emacs -nw
+: 1488647239:0;ls /usr/share/applications
+: 1488647247:0;emacs
+: 1488647263:0;emacs -nw /usr/share/applications/mpv.desktop
+: 1488647281:0;emacs -nw /usr/share/applications/emacs*
+: 1488647381:0;cp /usr/share/applications/emacs.desktop .local/share/applications/emacs.desktop
+: 1488647386:0;mkdir .local/share/applications
+: 1488647387:0;cp /usr/share/applications/emacs.desktop .local/share/applications/emacs.desktop
+: 1488647397:0;emacs -nw .local/share/applications/emacs.desktop
+: 1488647447:0;env | grep TERM
+: 1488647573:0;term
+: 1488647575:0;TERM
+: 1488647577:0;$TERM
+: 1488647629:0;ls
+: 1488647634:0;xdg-open atomic.c
+: 1488647668:0;emacs -nw .local/share/applications/emacs.desktop
+: 1488647679:0;xdg-open atomic.c
+: 1488647688:0;emacs -nw .local/share/applications/emacs.desktop
+: 1488647696:0;xdg-open atomic.c
+: 1488647771:0;emacs -nw .local/bin/term_app.sh
+: 1488647822:0;chmod +x .local/bin/term_app.sh
+: 1488647824:0;exit
+: 1488647828:0;term_app.sh
+: 1488647874:0;emacs -nw .local/bin/term_app.sh
+: 1488647908:0;term_app.sh emacs -nw
+: 1488648012:0;emacs -nw .local/bin/desktop_app.sh
+: 1488648145:0;tmux new-window firefox
+: 1488648196:0;/usr/bin/env shell
+: 1488648311:0;/bin/env shell
+: 1488648314:0;/bin/env zsh
+: 1488648315:0;exit
+: 1488648317:0;/bin/env bash
+: 1488648325:0;/bin/env SHELL
+: 1488648336:0;/bin/sh
+: 1488648382:0;$SHELL
+: 1488648383:0;exit
+: 1488648433:0;get-shell
+: 1488648529:0;shell
+: 1488648538:0;create_script.sh shell
+: 1488648572:0;getent passwd
+: 1488648576:0;getent passwd $LOGNAME
+: 1488648584:0;getent passwd $LOGNAME cut -d: -f7
+: 1488648591:0;getent passwd $LOGNAME | cut -d: -f7
+: 1488648596:0;getent passwd $LOGNAME | cut -d: -f20
+: 1488648598:0;getent passwd $LOGNAME | cut -d: -f1
+: 1488648600:0;getent passwd $LOGNAME | cut -d: -f2
+: 1488648601:0;getent passwd $LOGNAME | cut -d: -f3
+: 1488648602:0;getent passwd $LOGNAME | cut -d: -f4
+: 1488648603:0;getent passwd $LOGNAME | cut -d: -f5
+: 1488648605:0;getent passwd $LOGNAME | cut -d: -f6
+: 1488648607:0;getent passwd $LOGNAME | cut -d: -f7
+: 1488648624:0;exit
+: 1488648627:0;shell
+: 1488648628:0;exit
+: 1488648658:0;emacs -nw .local/bin/term_app.sh
+: 1488648696:0;zsh echo ls
+: 1488648715:0;zsh ls
+: 1488648725:0;man zsh
+: 1488648742:0;zsh -c ls
+: 1488648747:0;exit
+: 1488648782:0;create_script.sh
+: 1488648797:0;create_script.sh test
+: 1488648945:0;ls
+: 1488648953:0;emacs -nw .local/bin/shell
+: 1488649002:0;shell ls
+: 1488649641:0;term_app.sh emacs -nw
+: 1488649703:0;mv .local/bin/term_app.sh .local/bin/term
+: 1488649704:0;term
+: 1488649706:0;exit
+: 1488649784:0;shell ls
+: 1488649798:0;sudo nvim /etc/profile.d/50-dotfiles.sh
+: 1488649854:0;exit
+: 1488649970:0;ls .cache/rofi-3.runcache
+: 1488649974:0;rm .cache/rofi-3.runcache
+: 1488650027:0;cat .local/bin/term
+: 1488650043:0;/usr/bin/urxvt -e shell ls
+: 1488650075:0;/usr/bin/urxvt -e shell
+: 1488650079:0;/usr/bin/urxvt -e ls
+: 1488650084:0;/usr/bin/urxvt -e shell emacs -nw
+: 1488667799:0;exit
+: 1488667833:0;sudo emerge -apv --depclean
+: 1488667876:0;sudo emerge --sync
+: 1488667956:0;sudo emerge -av --depclean
+: 1488667996:0;sudo emerge -a ck-sources
+: 1488668056:0;emacs .local/bin/install_pkg.sh
+: 1488668075:0;update
+: 1488668090:0;create_script.sh update
+: 1488668107:0;cat .local/share/scripts/utils.sh
+: 1488668322:0;emacs -nw .local/bin/update
+: 1488668327:0;exit
+: 1488668330:0;update
+: 1488668501:0;emacs -nw .local/share/scripts/utils.sh
+: 1488668528:0;update
+: 1488668602:0;emacs -nw .local/share/scripts/utils.sh
+: 1488668746:0;update
+: 1488668929:0;emacs -nw .local/bin/update
+: 1488668958:0;update
+: 1488669024:0;man emerge
+: 1488670189:0;update
+: 1488670253:0;sudo update
+: 1488670274:0;sudo ./.local/bin/update
+: 1488670763:0;sudo ./.local/bin/update resume
+: 1488671028:0;sudo emerge -av --depclean
+: 1488671064:0;cd /usr/src/linux
+: 1488671067:0;cp .config ~
+: 1488671075:0;cp .config ~/.config.bak
+: 1488671076:0;cd
+: 1488671077:0;exit
+: 1488671304:0;emacs -nw .local/bin/update
+: 1488671384:0;emacs .local/share/scripts/utils.sh
+: 1488671387:0;emacs .local/share/scripts/utils.sh -new
+: 1488671389:0;emacs .local/share/scripts/utils.sh -nw
+: 1488671468:0;u_confirm what the fuck
+: 1488671527:0;exit
+: 1488671532:0;u_confirm what the fuck
+: 1488671536:0;exit
+: 1488671967:0;u_confirm "Test this out"
+: 1488671978:0;u_confirm "Test this out" here
+: 1488672479:0;exit
+: 1488672485:0;u_confirm "Hello" ls
+: 1488672696:0;exit
+: 1488672705:0;u_confirm Test me
+: 1488672715:0;u_confirm Test me = out
+: 1488672746:0;u_confirm Test  = out
+: 1488672760:0;set
+: 1488672762:0;man set
+: 1488672790:0;SET
+: 1488672805:0;u_confirm Test SET out
+: 1488672811:0;exit
+: 1488672813:0;u_confirm Test SET out
+: 1488672829:0;u_confirm Test SET SET
+: 1488672847:0;u_confirm Test = me
+: 1488673215:0;"ls"
+: 1488673219:0;exit
+: 1488673229:0;u_confirm "Test" ls
+: 1488673257:0;u_confirm "Test" "echo true" "echo false"
+: 1488673268:0;$(u_confirm "Test" "echo true" "echo false")
+: 1488673524:0;exit
+: 1488678635:0;sudo update
+: 1488678668:0;nvim .dotfiles/zsh/.zshrc
+: 1488678674:0;emacs -nw .dotfiles/zsh/.zshrc
+: 1488678726:0;sudo update
+: 1488678732:0;exit
+: 1488678747:0;emacs -nw .local/bin/update
+: 1488678787:0;update
+: 1488678854:0;exit
+: 1488678856:0;sudo update
+: 1488678915:0;sudo emacs -nw /etc/portage/package.use
+: 1488678954:0;sudo emerge --unmerge gimp
+: 1488678966:0;sudo update
+: 1488679044:0;exit
+: 1488679048:0;cd /etc/portage
+: 1488679048:0;ls
+: 1488679053:0;sudo rm make.conf.euse_backup
+: 1488679058:0;ls -la
+: 1488679070:0;cd make.profile.bak
+: 1488679070:0;ls
+: 1488679082:0;sudo emacs -nw make.defaults
+: 1488679098:0;euse
+: 1488679102:0;exit
+: 1488679105:0;man euse
+: 1488679113:0;euse -i
+: 1488679140:0;euse -i > USE_FLAGS
+: 1488679380:0;cd /usr/local/portage
+: 1488679380:0;ls
+: 1488679383:0;ls slabity-overlay
+: 1488679385:0;ls slabity-overlay/*
+: 1488679608:0;ranger
+: 1488679660:0;sudo emacs -nw /etc/portage/sets/utils
+: 1488679863:0;exit
+: 1488679944:0;ls -la
+: 1488679946:0;cd
+: 1488679947:0;ls
+: 1488680423:0;sudo update
+: 1488680454:0;sudo emacs -nw /etc/portage/sets/utils
+: 1488680461:0;sudo update
+: 1488680521:0;jack_control start
+: 1488680522:0;exit
+: 1488686025:0;sudo update resume
+: 1488686053:0;cd /usr/local/portage/slabity-overlay
+: 1488686054:0;ls
+: 1488686071:0;emacs -nw sys-apps/kmscon/kmscon-8.ebuild
+: 1488686320:0;cd
+: 1488686374:0;emacs -nv .spacemacs
+: 1488686379:0;emacs -nw .spacemacs
+: 1488687767:0;alsamixer
+: 1488688938:0;sudo update resume
+: 1488689725:0;xrdb
+: 1488689736:0;xrandr
+: 1488689749:0;xrandr --output HDMI-1 --mode 1920x1080 --left-of eDP-1
+: 1488689985:0;xrandr
+: 1488690006:0;xrandr --output HDMI-1 --mode 1920x1080 --right-of eDP-1
+: 1488690014:0;xrandr --output HDMI-1 --mode 1920x1080
+: 1488690035:0;xrandr --output HDMI-1 --same-as eDP-1
+: 1488690062:0;xrandr --output HDMI-1 --mode 1920x1080 --same-as eDP-1
+: 1488690082:0;dmesg
+: 1488690087:0;xrandr
+: 1488690112:0;xrandr --output HDMI-1 --mode 1920x1080 --same-as eDP-1
+: 1488690116:0;xrandr
+: 1488690119:0;dmesg
+: 1488690124:0;exit
+: 1488690129:0;sudo reboot
+: 1488690167:0;xrandr
+: 1488690179:0;xrandr --output HDMI-1 --same-as eDP-1
+: 1488690486:0;exit
+: 1488690491:0;jack_control start
+: 1488690493:0;exit
+: 1488695326:0;alsamixer
+: 1488697474:0;exit
+: 1488737452:0;alsamixer
+: 1488741279:0;sudo update
+: 1488741438:0;exit
+: 1488746728:0;git
+: 1488746732:0;sudo emerge -a git
+: 1488746746:0;sudo emerge -a dev-vcs/git
+: 1488761478:0;equery /bin
+: 1488761483:0;equery b /bin
+: 1488761640:0;sudo find / -xdev
+: 1488761650:0;sudo find / -xdev | less
+: 1488761667:0;sudo find /
+: 1488761714:0;sudo find / -path /btrfs -prune -o -print
+: 1488761725:0;sudo find / -path /btrfs -prune -o -path /home -prune -o -print
+: 1488761752:0;sudo find / -path /btrfs -prune -o -path /home -prune -o -exec qfile -o {} +
+: 1488761774:0;man qfile
+: 1488761804:0;sudo find / -path /btrfs -prune -o -path /home -prune -o -exec qfile -o {} + > orphaned_files
+: 1488763916:0;emacs -nw orphaned_files
+: 1488764678:0;create_script.sh orphaned_files
+: 1488764687:0;emacs -nw .local/bin/create_script.sh
+: 1488764707:0;create_script.sh orphaned_files
+: 1488764720:0;export EDITOR="emacs -nw"
+: 1488764722:0;create_script.sh orphaned_files
+: 1488764733:0;emacs -nw .local/bin/create_script.sh
+: 1488764812:0;emacs -nw .local/bin/orphaned_files
+: 1488764822:0;cat .local/bin/create_script.sh
+: 1488765045:0;emacs -nw .local/bin/orphaned_files
+: 1488765062:0;emacs -nw orphaned_files
+: 1488765242:0;ls /var
+: 1488765276:0;ls
+: 1488765278:0;ls /
+: 1488765346:0;orphaned_files
+: 1488765351:0;chmod +x .local/bin/orphaned_files
+: 1488765353:0;orphaned_files
+: 1488765369:0;emacs .local/bin/orphaned_files
+: 1488765372:0;emacs .local/bin/orphaned_files -nw
+: 1488765480:0;exit
+: 1488765483:0;orphaned_files
+: 1488765580:0;hgrep qfile
+: 1488765633:0;orphaned_files
+: 1488765672:0;exit
+: 1488765676:0;orphaned_files
+: 1488765714:0;orphaned_files > orphaned_files
+: 1488766349:0;emacs -nw orphaned_files
+: 1488769707:0;ls /sys
+: 1488769713:0;ls /sys/kernel
+: 1488769716:0;ls /proc
+: 1488769724:0;ls /proc/filesystems
+: 1488769726:0;cat /proc/filesystems
+: 1488770194:0;sudo echo "16384"
+: 1488770198:0;sudo su
+: 1488771460:0;exit
+: 1488776376:0;ls /var/cache
+: 1488776378:0;ls -la /var
+: 1488776473:0;sudo emacs -nw /etc/fstab
+: 1488776490:0;ls -la /
+: 1488777775:0;alsamixer
+: 1488809647:0;notify
+: 1488809651:0;notify	atomic.c
+: 1488809652:0;ls -la
+: 1488809659:0;exit
+: 1488812960:0;emacs -nw .local/bin/orphaned_files
+: 1488812992:0;emacs -nw orphaned_files
+: 1488813089:0;emacs -nw .local/bin/orphaned_files
+: 1488813119:0;ls /var/tmp
+: 1488813122:0;ls -la /var
+: 1488813133:0;cd /var
+: 1488813134:0;ls -la
+: 1488813141:0;sudo su
+: 1488813361:0;exit
+: 1488813372:0;orphaned_files > orphaned_files
+: 1488813378:0;exit
+: 1488813686:0;emacs -nw .local/bin/orphaned_files
+: 1488813693:0;emacs -nw orphaned_files
+: 1488813764:0;cat /var/lib/texmf/ls-R
+: 1488813783:0;sudo emerge -a texmf
+: 1488813817:0;ls
+: 1488813821:0;emacs -nw USE_
+: 1488813825:0;emacs -nw USE_FLAGS
+: 1488813869:0;ls prequest
+: 1488813870:0;cat prequest
+: 1488813892:0;rm prequest
+: 1488814512:0;exit
+: 1488814573:0;sudo eselect emacs list
+: 1488814969:0;sudo emacs -nw /etc/portage/package.use
+: 1488815101:0;sudo emerge -a emacs
+: 1488815128:0;sudo emacs -nw /etc/portage/package.use
+: 1488815133:0;sudo emerge -a emacs
+: 1488815241:0;emacs
+: 1488815691:0;fg ; /usr/bin/emacs --resume-layouts -nw
+: 1488816407:0;cd .emacs.d
+: 1488816407:0;ls
+: 1488816426:0;emacs ../.spacemacs
+: 1488816510:0;ls
+: 1488816512:0;ls layers
+: 1488816526:0;ls layers/*
+: 1488818364:0;colors
+: 1488818366:0;color
+: 1488818604:0;emacs .Xresources
+: 1488818858:0;cp .Xresources .Xresources.bak
+: 1488818860:0;emacs .Xresources
+: 1488819421:0;xrdb .Xresources
+: 1488819424:0;ls -la
+: 1488819452:0;exit
+: 1488819454:0;emacs .Xresources
+: 1488819479:0;ls
+: 1488819485:0;exit
+: 1488819487:0;emacs .Xresources
+: 1488819522:0;xrdb .Xresources
+: 1488819525:0;ls -la
+: 1488819548:0;emacs .Xresources
+: 1488819552:0;exit
+: 1488825040:0;ls -la
+: 1488825059:0;emacs .Xresources
+: 1488825323:0;xrdb .Xresources
+: 1488825324:0;exit
+: 1488825325:0;ls -la
+: 1488825355:0;emacs .Xresources
+: 1488825462:0;xrdb .Xresources
+: 1488825464:0;ls -la
+: 1488825470:0;ls
+: 1488825479:0;./.local/bin/term
+: 1488825485:0;exit
+: 1488825532:0;ls -la
+: 1488825541:0;emacs .Xresources
+: 1488825555:0;xrdb .Xresources
+: 1488825558:0;exit
+: 1488825560:0;emacs .Xresources
+: 1488825585:0;xrdb .Xresources
+: 1488825588:0;ls -la
+: 1488825595:0;exit
+: 1488825596:0;emacs .Xresources
+: 1488825943:0;xrdb .Xresources
+: 1488825945:0;ls -la
+: 1488825952:0;exit
+: 1488825981:0;ls /
+: 1488825984:0;ls -la /
+: 1488825996:0;emacs .Xresources
+: 1488826019:0;xrdb .Xresources
+: 1488826021:0;ls -la
+: 1488826031:0;ls -la /
+: 1488826045:0;ls
+: 1488826069:0;emacs .Xresources
+: 1488826072:0;exit
+: 1488837071:0;alsamixer
+: 1488838122:0;emacs .Xresources
+: 1488838126:0;exit
+: 1488838252:0;xrdb .Xresources
+: 1488838253:0;exit
+: 1488838255:0;ls -la
+: 1488838258:0;exit
+: 1488838328:0;cargo
+: 1488838330:0;rustc
+: 1488838336:0;sudo emerge -a cargo
+: 1488838349:0;sudo emerge -a rust:rust
+: 1488838355:0;sudo emerge -a rust:nightly
+: 1488838419:0;sudo emacs /etc/portage/package.keywords
+: 1488838434:0;sudo emerge -a rust:nightly cargo:nightly
+: 1488838441:0;sudo emerge -a rust:nightly cargo::rust
+: 1488838481:0;sudo emacs /etc/portage/package.keywords
+: 1488838491:0;sudo emerge -a rust:nightly cargo::rust
+: 1488838503:0;sudo rm /etc/portage/._cfg0000_package.keywords
+: 1488838720:0;sudo emerge -a notifyd
+: 1488838799:0;sudo emerge -a xfce-extra/xfce4-notifyd
+: 1488838855:0;sudo emerge -a notification-daemon
+: 1488838921:0;sudo emerge -a twmn
+: 1488838947:0;sudo emerge -a notification-daemon
+: 1488838969:0;sudo emerge -a virtual/notification-deamon
+: 1488838986:0;sudo emerge -a virtual/notification-daemon
+: 1488839049:0;/usr/libexec/notification-daemon
+: 1488839075:0;sudo emerge -a notify-send
+: 1488839096:0;sudo emerge -a libnotify
+: 1488839140:0;exit
+: 1488839151:0;notify-send "This is a test" "Just a test"
+: 1488839210:0;exit
+: 1488839302:0;sudo emacs /var/tmp/portage/dev-lang/rust-9999/temp/build.log
+: 1488839335:0;emacs .local/bin/update
+: 1488839558:0;/usr/libexec/notification-daemon &
+: 1488839565:0;sudo update
+: 1488839580:0;exit
+: 1488841096:0;killall firefox
+: 1488842038:0;ls
+: 1488842160:0;ls -la
+: 1488842162:0;exit
+: 1488845391:0;rustc
+: 1488845406:0;sudo emacs /var/tmp/portage/dev-lang/rust-999/temp/build.log
+: 1488846983:0;ls /usr/local/portage/gentoo-rust/dev-lang/rust/
+: 1488847040:0;sudo emacs /usr/local/portage/gentoo-rust/dev-lang/rust-999*
+: 1488847049:0;sudo emacs /usr/local/portage/gentoo-rust/dev-lang/rust/rust-999*
+: 1488847146:0;exit
+: 1488847162:0;diff /usr/local/portage/gentoo-rust/dev-lang/rust/rust-999*
+: 1488847220:0;cargo
+: 1488847229:0;sudo emerge -a rust:nightly
+: 1488852296:0;exit
+: 1488928623:0;ls -la
+: 1488928627:0;cd .dotfiles
+: 1488928627:0;ls
+: 1488928830:0;sudo emerge -a stow
+: 1488928865:0;ls
+: 1488928870:0;emacs Xresources
+: 1488928880:0;cat ~/.Xresources
+: 1488928890:0;cp ~/.Xresources Xresources
+: 1488928892:0;ls
+: 1488928895:0;ls -la ~
+: 1488928897:0;ls
+: 1488928910:0;git mv Xresources .Xresources
+: 1488928913:0;ls ~
+: 1488928915:0;cd ~
+: 1488928916:0;ls -la
+: 1488928920:0;rm .Xresources
+: 1488928936:0;ln -s .dotfiles/.Xresources .Xresources
+: 1488928938:0;ls -la
+: 1488928943:0;cat .Xresources
+: 1488928949:0;cd .dotfiles
+: 1488928949:0;ls
+: 1488928958:0;mkdir .config
+: 1488928960:0;ls -la
+: 1488928980:0;git mv zsh/ .config/zsh
+: 1488928982:0;ls -la
+: 1488928986:0;ls -la i3
+: 1488928998:0;ls -la
+: 1488929001:0;ls .config
+: 1488929003:0;ls .config/zsh
+: 1488929015:0;git mv i3 .config/i3
+: 1488929016:0;ls -la
+: 1488929026:0;git mv tmux.conf .tmux.conf
+: 1488929030:0;ls
+: 1488929034:0;ls git
+: 1488929040:0;git mv git/ .git
+: 1488929044:0;cd ..
+: 1488929045:0;ls -la
+: 1488929048:0;cd .dotfiles
+: 1488929049:0;ls -la
+: 1488929065:0;ls .git
+: 1488929067:0;cd .config
+: 1488929067:0;ls
+: 1488929072:0;cd ..
+: 1488929078:0;ls -la .git
+: 1488929080:0;ls -la .git/git
+: 1488929087:0;mv .git/git .
+: 1488929089:0;ls -la
+: 1488929096:0;rm -rf git
+: 1488929098:0;ls -la
+: 1488929103:0;git rm git
+: 1488929105:12;git commit
+: 1488929118:0;ls
+: 1488929121:0;cd .config/i3
+: 1488929121:0;ls
+: 1488929137:0;rm -rf background* bar.py __pycache__ Sun.py
+: 1488929139:0;cd ..
+: 1488929140:0;ls
+: 1488929142:35;git commit
+: 1488929183:7;git push origin master
+: 1488929193:3;git diff
+: 1488929198:0;ls -la
+: 1488929203:0;ls i3/config 
+: 1488929205:0;cd ..
+: 1488929210:2;git diff
+: 1488929213:0;ls -la
+: 1488929217:0;rm -la
+: 1488929221:0;rm \-la
+: 1488929224:0;rm \\-la
+: 1488929229:0;rm -la
+: 1488929230:0;ls -la
+: 1488929234:1;rm ./-la
+: 1488929237:0;ls -la
+: 1488929242:0;ls .config
+: 1488929253:0;stow .Xresources
+: 1488929259:0;ls -la
+: 1488929314:0;stow .Xresources
+: 1488929316:0;ls -la
+: 1488929331:0;ls ..
+: 1488929332:0;cd ..
+: 1488929334:0;ls -la
+: 1488929336:2;rm .tmux.conf
+: 1488929344:0;cd .dotfiles
+: 1488929344:0;stow
+: 1488929397:0;tree
+: 1488929401:0;ls -la
+: 1488929404:0;ls -la /.*
+: 1488929408:0;ls -la ./.*
+: 1488929438:0;mkdir Xresources
+: 1488929442:0;mv .Xresources Xresources
+: 1488929443:0;ls -la
+: 1488929448:0;stow Xresources
+: 1488929458:0;ls -la
+: 1488929464:0;mkdir tmux
+: 1488929468:0;mv .tmux.conf tmux
+: 1488929471:0;git stow tmux
+: 1488929475:0;stow tmux
+: 1488929476:0;ls -la
+: 1488929487:0;mkdir i3
+: 1488929511:0;ls -la
+: 1488929520:0;mkdir dotfiles
+: 1488929521:0;ls
+: 1488929526:0;mv Xresources/.Xresources dotfiles
+: 1488929532:0;mv tmux/.tmux.conf dotfiles
+: 1488929533:0;ls -la
+: 1488929538:0;rm -rf tmux Xresources
+: 1488929539:0;ls
+: 1488929542:0;ls .config
+: 1488929547:0;mkdir dotfiles/.config
+: 1488929554:0;mv .config/* dotfiles/.config
+: 1488929556:0;ls -la
+: 1488929557:0;ls .config
+: 1488929560:0;rm -rf .config
+: 1488929564:0;ls dotfiles
+: 1488929567:0;ls dotfiles/.config/
+: 1488929571:0;ls dotfiles/.config/i3/config 
+: 1488929572:0;ls i3
+: 1488929576:1;rm -r i3
+: 1488929578:0;ls -la
+: 1488929584:0;ls -la ~
+: 1488929595:2;rm ~/.tmux.conf ~/.Xresources
+: 1488929599:0;cd ..
+: 1488929601:0;ls -la
+: 1488929611:4;rm .Xresources.bak .xsession-errors*
+: 1488929616:0;ls
+: 1488929621:0;cd .dotfiles
+: 1488929624:0;cd ~
+: 1488929626:0;ls .config
+: 1488929629:0;ls -la .config
+: 1488929645:3;rm -r .config/git .config/i3 .config/zsh
+: 1488929653:0;cd .dotfiles
+: 1488929654:0;ls -la
+: 1488929666:0;ls dotfiles
+: 1488929666:0;ls
+: 1488929670:0;ls dotfiles -la
+: 1488929674:0;ls dotfiles/.config
+: 1488929680:0;stow dotfiles
+: 1488929683:0;ls -la ~
+: 1488929689:0;exit
+: 1488929691:0;ls
+: 1488929705:0;mv dotfiles/.* .
+: 1488929708:1;rm -r dotfiles
+: 1488929710:0;ls -la
+: 1488929712:0;cd ..
+: 1488929712:0;ls -la
+: 1488929723:3;rm .tmux.conf .Xresources .config/i3 .config/zsh
+: 1488929729:0;cd .dotfiles
+: 1488929730:0;ls -la
+: 1488929734:0;cd ..
+: 1488929737:1;stow .dotfiles
+: 1488929751:0;ls -la
+: 1488929760:0;stow
+: 1488929782:0;stow --ignore=".git*" .dotfiles
+: 1488929789:0;stow --ignore=".gitmodules" .dotfiles
+: 1488929800:0;stow --ignore=\*gitmodules\* .dotfiles
+: 1488929805:0;stow --ignore=\\*gitmodules\\* .dotfiles
+: 1488929814:0;stow --ignore=\\\*gitmodules\\\* .dotfiles
+: 1488929867:0;mkdir home
+: 1488929868:0;ls -la
+: 1488929872:0;rm -rf home
+: 1488929874:0;cd .dotfiles
+: 1488929875:0;mkdir home
+: 1488929876:0;ls -la
+: 1488929881:0;mv .Xresources home
+: 1488929884:0;mv .tmux.conf home
+: 1488929889:0;mv .config home
+: 1488929890:0;ls -la
+: 1488929896:0;stow home
+: 1488929898:0;ls -la
+: 1488929901:0;git add home/
+: 1488929903:0;git commit
+: 1488929931:0;emacs .gitignore
+: 1488929961:0;git add home/
