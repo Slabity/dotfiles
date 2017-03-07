@@ -1,0 +1,56 @@
+#!/bin/bash
+
+source $HOME/.local/share/scripts/utils.sh
+
+if [ "$1" == "resume" ];
+then
+    emerge --resume
+    exit 0
+fi
+
+u_header "Updating system"
+u_confirm "Would you like to sync the package database?"; sync="$?"
+u_confirm "Would you like to update packages?"; update="$?"
+
+if [ $update -eq 0 ];
+then
+    u_confirm "    Consider the entire tree?"; deep="$?"
+    u_confirm "    Update build dependencies?"; bdeps="$?"
+    u_confirm "    Changed USE flags?"; newuse="$?"
+fi
+
+u_confirm "Would you like to clean dependencies?"; depclean="$?"
+
+if [ $sync -eq 0 ];
+then
+    emerge --sync
+    notify-send "update" "Finished syncing portage tree"
+fi
+
+if [ $update -eq 0 ];
+then
+    args="--ask --tree"
+    if [ $deep -eq 0 ];
+    then
+        args="$args --deep"
+    fi
+
+    if [ $bdeps -eq 0 ];
+    then
+        args="$args --with-bdeps=y"
+    fi
+
+    if [ $newuse -eq 0 ];
+    then
+        args="$args --newuse"
+    fi
+
+    emerge $args @world
+    notify-send "update" "Finished updating @world"
+fi
+
+if [ $depclean -eq 0 ];
+then
+    emerge -av --depclean
+    notify-send "update" "Finished cleaning dependencies"
+fi

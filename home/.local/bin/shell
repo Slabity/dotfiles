@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec $(getent passwd $LOGNAME | cut -d: -f7) -c $@

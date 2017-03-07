@@ -1,0 +1,28 @@
+#!/bin/bash
+
+source $HOME/.local/share/scripts/utils.sh
+
+# Do not look in the following directories
+prune[0]=/home
+prune[1]=/btrfs
+prune[2]=/usr/local
+prune[3]=/usr/portage
+prune[4]=/usr/src
+prune[5]=/tmp
+prune[6]=/var/tmp
+prune[7]=/var/cache
+prune[8]=/var/db
+prune[9]=/var/log
+prune[10]=/proc
+prune[11]=/run
+prune[12]=/sys
+prune[13]=/dev
+prune[14]=/mnt
+prune[15]=/media
+
+for p in ${prune[@]};
+do
+    args="$args -path $p -prune -o"
+done
+
+find / $args -exec qfile -o {} +
