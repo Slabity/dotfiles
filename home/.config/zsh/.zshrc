@@ -1,6 +1,6 @@
 # ZSH Variables
 export ZSH=$ZDOTDIR/oh-my-zsh
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="../../themes/powerlevel9k/powerlevel9k"
 UPDATE_ZSH_DAYS=7
 HIST_STAMPS="mm-dd-yyyy"
 HISTFILE=$ZDOTDIR/zsh_history

@@ -4,3 +4,6 @@
 [submodule "home/.config/zsh/oh-my-zsh"]
 	path = home/.config/zsh/oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh
+[submodule "home/.config/zsh/themes/powerlevel9k"]
+	path = home/.config/zsh/themes/powerlevel9k
+	url = https://github.com/bhilburn/powerlevel9k.git
