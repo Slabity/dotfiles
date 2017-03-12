@@ -1,6 +1,6 @@
 # Get rid of targets we don't want
-PYTHON_SINGLE_TARGET="-* python3_5"
-PYTHON_TARGETS="-* python3_5"
+PYTHON_SINGLE_TARGET="-* python3_6"
+PYTHON_TARGETS="-* python3_5 python3_6"
 RUBY_TARGETS="-* ruby24"
 LLVM_TARGETS="*"
 PHP_TARGETS="-*"

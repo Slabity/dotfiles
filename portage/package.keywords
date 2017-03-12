@@ -1,3 +1,5 @@
 dev-lang/rust **
+dev-lang/rust-bin **
 virtual/rust **
 dev-util/cargo **
+dev-util/cargo-bin **
