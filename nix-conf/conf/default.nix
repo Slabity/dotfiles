@@ -1,16 +1,14 @@
-{ config, pkgs, expr, ... }:
+{ config, pkgs, expr, sys, ... }:
 
 with builtins; with pkgs.lib; {
 
     imports = [
-        ./desktop.nix
-        ./pulseaudio.nix
+        ./bootloader.nix
+        ./desktop
     ];
 
-    networking = {
-        hostName = "mew";
-        networkmanager.enable = true;
-    };
+    system.stateVersion = "17.09";
+    system.nixosLabel = sys.hostName;
 
     # Locale
     i18n = {
@@ -18,7 +16,10 @@ with builtins; with pkgs.lib; {
         consoleKeyMap = "us";
         defaultLocale = "en_US.UTF-8";
     };
-    time.timeZone = "America/New_York";
+
+    time.timeZone = sys.timeZone;
+    networking.hostName = sys.hostName;
+    networking.networkmanager.enable = true;
 
     # Enable CUPS to print documents.
     services.printing.enable = true;
@@ -27,8 +28,6 @@ with builtins; with pkgs.lib; {
     users.defaultUserShell = pkgs.zsh;
     users.extraUsers.slabity = {
         isNormalUser = true;
-        home = "/home/slabity";
-        description = "slabity";
         extraGroups = [
             "wheel"
             "networkmanager"
@@ -38,61 +37,26 @@ with builtins; with pkgs.lib; {
         uid = 1000;
     };
 
-  system.stateVersion = "17.09";
-  system.nixosLabel = "mew";
-  zramSwap.enable = true;
+    zramSwap.enable = true;
 
-    boot = {
-        # kexec into rescue mode on kernel crash.
-        crashDump.enable = false;
+    hardware.opengl.driSupport32Bit = true;
 
-        loader = {
-            efi.efiSysMountPoint = "/boot";
-            efi.canTouchEfiVariables = true;
-            grub = {
-                enable = true;
-                device = "nodev";
-                enableCryptodisk = true;
-                efiSupport = true;
-                useOSProber = true;
-                configurationName = "Raichu";
-            };
-            timeout = 3;
-        };
-
-        #plymouth = {
-        #    enable = true;
-        #    theme = "spinner";
-        #};
-    };
-
-    hardware.opengl = {
-        driSupport = true;
-        driSupport32Bit = true;
-
-        # Hardware acceleration packages go here.
-        #extraPackages = with pkgs; [
-        #    vaapiIntel      # Video Accel API by Intel
-        #    libvdpau-va-gl  # VDPAU driver using VAAPI
-        #    beignet         # OpenCL for Intel
-        #];
-    };
-
-    # Visual improvements
-    #services.compton = {
-    #    enable = true;
-    #    fade = true;
-    #    inactiveOpacity = "0.8";
-    #    shadow = true;
-    #    fadeDelta = 3;
-    #    vSync = "drm";
-    #};
-
-    # List packages installed in system profile. To search by name, run:
-    # $ nix-env -qaP | grep wget
+    # List of packages installed in system profile.
     environment.systemPackages = with pkgs; [
-        # Development
-        git
+        # Version control
+        git mercurial subversion
+
+        # Archiving
+        unzip zip unrar
+
+        # Disk and FS
+        gptfdisk parted btrfs-progs exfat dosfstools ecryptfs squashfsTools
+        linuxPackages.zfs
+
+        # Monitoring
+        pciutils usbutils atop
+        linuxPackages.netatop # Extends atop to add networking
+
         gdb
         pkgconfig
         gcc6
@@ -104,30 +68,16 @@ with builtins; with pkgs.lib; {
         #rustChannels.nightly.rust-src
         rustracer
 
-        # Libraries I use a lot
-        libdrm
-
-        # Utilities
-        gptfdisk
-        pciutils
-        usbutils
-        atop
-        linuxPackages.netatop   # Adds networking to `atop`
-
         # Custom packages
         texlive.combined.scheme-full
     ];
 
     services.emacs.enable = true;
-    services.mpd.enable = true;
-    services.tlp.enable = true;
-    virtualisation.docker.enable = true;
-    virtualisation.libvirtd.enable = true;
-
     programs.tmux.enable = true;
     programs.tmux.keyMode = "vi";
 
-    nixpkgs.config.firefox.enableAdobeFlash = true;
+    virtualisation.docker.enable = true;
+    virtualisation.libvirtd.enable = true;
 
     programs.zsh = {
         enable = true;
@@ -146,17 +96,6 @@ with builtins; with pkgs.lib; {
             ];
             theme = "../../../../../..${expr.powerlevel9k}/powerlevel9k/powerlevel9k";
         };
-    };
-
-    fonts = {
-        fonts = with pkgs; [
-            dejavu_fonts
-            source-code-pro
-            source-sans-pro
-            source-serif-pro
-            font-awesome-ttf
-            powerline-fonts
-        ];
     };
 
     nix = {
